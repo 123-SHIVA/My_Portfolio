@@ -46,6 +46,26 @@
    font-size: 0.9rem;
    font-weight: 200;
 }
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.container label {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.container input {
+    flex: 2;
+    margin-right: 10px;
+}
+
+.container .percentageDisplay {
+    flex: 1;
+}
 
 @media screen and (max-width:720px){
     .skillBarText>p{

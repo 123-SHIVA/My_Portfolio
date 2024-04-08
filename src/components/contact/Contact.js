@@ -13,20 +13,22 @@ import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form=useRef();
+  console.log("---------",form.current);
   const sendEmail=(e)=>{
     e.preventDefault();
-  
-  emailjs.sendForm('service_aoyq7xq', 'template_vi018tm',form.current ,'SgxIs7cmeR5x6BjEg').then(
-    (result) => {
-      console.log(result.text);
-      e.target.reset();
-      alert('Email sent !')
-    },
-    (error) => {
-      console.log(error.text);
-    },
-  );
-  };
+    
+
+    emailjs
+    .sendForm('service_sh5xqgo', 'template_b0rbbfe', form.current, {
+        publicKey: 'mKvys_HscvTzhmjMd',
+    })
+    .then(
+        () => { alert("message send successfully"); e.target.reset()},
+        (error) => {
+            console.log('FAILED...', error.text);
+        },
+    );
+};
 
   return (
     <section id="contactPage">
@@ -54,8 +56,8 @@ const Contact = () => {
             Please fill out the form below to discuss any work oppurtunities.
           </span>
           <form className="contactForm" ref={form} onSubmit={sendEmail}>
-           <input type="text" className="name" placeholder="Your name"name="your_name"/>
-           <input type="email" className="email" placeholder="Your email" name="your_email"/>
+           <input type="text" className="name" placeholder="Your name"name="name"/>
+           <input type="email" className="email" placeholder="Your email" name="email"/>
            <textarea name="message" rows="5" placeholder="Your message" className="msg"></textarea>
            <button type="submit" value='send' className="submitBtn">Submit</button>
            <div className="links">
