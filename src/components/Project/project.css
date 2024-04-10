@@ -24,13 +24,16 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-     width: 100vw;
-    max-width: 65rem;
+    width: 120vw;
+    max-width: 80rem;
+    
 }
 .worksImg{
     object-fit: cover;
-    height: 20rem;
+    height:20rem;
+    width: 37rem;
     margin: 1rem;
+    border-radius: 1rem;
 }
 .worksBtn{
     margin: 3rem 0;
@@ -42,7 +45,9 @@
 }
 @media screen and (max-width:585px) {
     .worksImg{
-      height: 48vw;
+      height: 50vw;
+      border-radius: 2rem;
+    
     }
     
 }

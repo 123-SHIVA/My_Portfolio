@@ -1,7 +1,7 @@
 import React from "react";
 import "./project.css";
-import portfolio1 from "../../assets/assets/portfolio-1.png";
-import portfolio2 from "../../assets/assets/portfolio-2.png";
+import portfolio1 from "../../assets/assets/Indiabusiness.png";
+import portfolio2 from "../../assets/assets/beatsLanding.png";
 import portfolio3 from "../../assets/assets/portfolio-3.png";
 import portfolio4 from "../../assets/assets/portfolio-4.png";
 import portfolio5 from "../../assets/assets/portfolio-5.png";
@@ -37,8 +37,8 @@ const Project = () => {
       {/* {data.map((item) => (
       ))} */}
         <div className="workImgs">
-          <img src={portfolio1} alt="" className="worksImg" />
-          <img src={portfolio2} alt="" className="worksImg" />
+        <a href="https://indiabusiness.org.in/"> <img src={portfolio1} alt="" className="worksImg" /></a> 
+        <a href="https://123-shiva.github.io/Beats-landing-page/"> <img src={portfolio2} alt="" className="worksImg" /></a>
           <img src={portfolio3} alt="" className="worksImg" />
           <img src={portfolio4} alt="" className="worksImg" />
           <img src={portfolio5} alt="" className="worksImg" />
