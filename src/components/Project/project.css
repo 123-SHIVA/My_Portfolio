@@ -41,13 +41,77 @@
     border: none;
     border-radius: 2rem;
     background: white;
+}
+.project-1{
+    display: flex;
+    flex-direction: row;
+}
+.project-1desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
 
 }
+
+.project-1desc > p {
+    text-align: center;
+    margin-top: 1rem;
+    width: 70%;
+}
+
+.project-1desc > button {
+    margin-top: 0.5rem;
+    padding: 5px;
+    width: 25%;
+    border: none;
+    color: black;
+    font-weight: bold;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
 @media screen and (max-width:585px) {
-    .worksImg{
-      height: 50vw;
-      border-radius: 2rem;
-    
+    .worksImg {
+        height: 50vw;
+        border-radius: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        width: 70%;
+        border-radius: 5px;
+       
     }
-    
+  
+
+    .project-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-1desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        font-weight: 300;
+        font-size: 1rem;
+        max-width: 38rem; /* Adjusted margin left */
+    }
+
+    .project-1desc > p {
+        text-align: center;
+        margin-top: 1rem;
+        margin-left: 0; /* Adjusted margin left */
+        width: 70%; /* Adjusted width */
+    }
+
+    .project-1desc > button {
+        margin-top: 0.5rem;
+        margin-left: 0; /* Adjusted margin left */
+        width: 30%; /* Adjusted width */
+    }
 }
